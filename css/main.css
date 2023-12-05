@@ -35,6 +35,11 @@ body {
   opacity: 0;
   animation: slideUp 1s forwards;
 }
+a{
+  text-decoration: none;
+  color: #1f1f1f;
+
+}
 @keyframes slideUp {
   to {
     transform: translateY(0);

@@ -1,10 +1,35 @@
 body {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   font-family: "Montserrat", serif;
 }
 
 * {
+  box-sizing: border-box;
+}
+.contact-desc {
+  width: 100%;
+}
+.contact-form {
+  width: 100%;
+}
+
+.contact-us-form-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background: #ffd4d0;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   box-sizing: border-box;
 }
 
@@ -209,10 +234,23 @@ footer {
   footer {
     flex-direction: row;
   }
+  .contact-us-form-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    background: #ffd4d0;
+  }
   .main-header {
     align-items: center;
     justify-content: space-around;
     display: flex;
+  }
+  .contact-desc {
+    width: 50%;
+  }
+  .contact-form {
+    width: 60%;
   }
 
   .main-nav ul {

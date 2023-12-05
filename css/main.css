@@ -31,6 +31,15 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 1s forwards;
+}
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .home-container {
@@ -127,6 +136,8 @@ body {
 }
 
 .highlight {
+  padding: 0;
+  margin: 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 72px;
@@ -194,8 +205,17 @@ body {
 .black {
   color: black;
 }
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 .numbers-represented-container {
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 1s forwards;
   text-align: center;
   margin: 10px;
 }
@@ -269,6 +289,13 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
   }
 
   .left-main-body {
